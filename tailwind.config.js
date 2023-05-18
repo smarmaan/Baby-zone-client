@@ -2,6 +2,10 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      // Add your custom fonts and enjoy.
+      Cambria: ["Cambria", "Sans-serif"],
+    },
     extend: {},
   },
   plugins: [require("daisyui")],
