@@ -177,13 +177,9 @@ const SignUp = () => {
  */}
             <div className="form-control mt-6">
               {accepted ? (
-                <button className="btn text-black border-0 shadow-xl normal-case text-xl font-bold bg-[#FF4A4A] hover:bg-[#98eecc]">
-                  Register
-                </button>
+                <button className="terms">Register</button>
               ) : (
-                <button className="btn text-black border-0 shadow-xl normal-case text-xl font-bold bg-[#FF4A4A] hover:bg-[#98eecc] btn-disabled">
-                  Register
-                </button>
+                <button className="terms btn-disabled">Register</button>
               )}
             </div>
             {/* 

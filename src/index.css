@@ -8,6 +8,12 @@
 .inactive-btn {
   @apply text-[#0A4D68] font-bold flex my-auto text-xl hover:text-3xl font-Cambria  px-5 rounded;
 }
+.terms {
+  @apply btn text-black border-0 shadow-xl normal-case text-xl font-bold bg-[#FF4A4A] hover:bg-[#98eecc];
+}
+.faEye-style {
+  @apply flex font-bold items-center gap-2 justify-end cursor-pointer;
+}
 
 /* .btnAL {
   background-color:#fc0202 ;

@@ -1,11 +1,16 @@
 import { useContext, useState } from "react";
-
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import google from "../../../src/assets/google.png";
 import github from "../../../src/assets/github.png";
-import { AuthContext } from "../../Providers/AuthProvider";
-
+import Lottie from "lottie-react";
+import login from "../../assets/login.json";
+//
+//
+//
+//
+//
 const Login = () => {
   const { signIn, user, handleGoogleSignIn, handleGitHubSignIn } =
     useContext(AuthContext);
@@ -16,17 +21,19 @@ const Login = () => {
   const navigate = useNavigate();
 
   const location = useLocation();
-  // console.log(location);
 
   const from = location?.state?.from?.pathname || "/";
-
+  //
+  //
+  //
+  //
+  //
+  //
   const handleLogin = (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-
-    // console.log(email, password);
 
     setError("");
     setSuccess("");
@@ -42,15 +49,24 @@ const Login = () => {
       .catch((error) => {
         console.log(error.message);
         setError(error.message);
-
         return;
       });
   };
-
+  //
+  //
+  //
+  //
+  //
+  //
   const togglePassword = () => {
     setPasswordType(passwordType === "password" ? "text" : "password");
   };
-
+  //
+  //
+  //
+  //
+  //
+  //
   const GoogleSignIn = () => {
     handleGoogleSignIn()
       .then((result) => {
@@ -62,6 +78,11 @@ const Login = () => {
         setError(error.message);
       });
   };
+  //
+  //
+  //
+  //
+  //
   const GitHubSignIn = () => {
     handleGitHubSignIn()
       .then((result) => {
@@ -73,21 +94,30 @@ const Login = () => {
         setError(error.message);
       });
   };
-
   console.log(user);
-
-  console.log(error);
-  // console.log(success);
+  //
+  //
+  //
+  //
+  //
+  //
   return (
-    <div className="bg-orange-200 rounded-3xl my-24">
-      {/* min-h-screen  */}
-      <div className="hero-content mx-auto flex-col py-16">
-        <div className="text-center my-2">
-          <h1 className="text-4xl font-bold font-serif bg-orange-300 rounded-3xl px-6 py-3 shadow-xl ">
+    <div className="bg-[#0A4D68] rounded-3xl my-24 hero font-Cambria ">
+      <div className="hero-content mx-auto flex-col py-16 lg:flex-row-reverse">
+        <h1 className="  bg-[#fbffdc]  rounded-2xl px-6 py-3 shadow-xl ">
+          <Lottie animationData={login} loop></Lottie>
+        </h1>
+
+        <div className="card flex-shrink-0 w-full max-w-sm md:max-w-md shadow-2xl bg-[#fbffdc]">
+          {/* 
+
+ */}
+          <h1 className="text-center text-4xl font-bold  bg-[#FF4A4A]  px-6 py-3 shadow-2xl rounded-es-3xl rounded-ee-3xl">
             Please Login !!
           </h1>
-        </div>
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-orange-50">
+          {/* 
+
+ */}
           <form onSubmit={handleLogin} className="card-body">
             <div className="form-control">
               <label className="label">
@@ -104,6 +134,9 @@ const Login = () => {
                 className="input input-bordered"
               />
             </div>
+            {/* 
+
+ */}
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-xl font-bold my-1">
@@ -120,12 +153,12 @@ const Login = () => {
               />
               <div className="my-2" onClick={togglePassword}>
                 {passwordType === "password" ? (
-                  <div className="flex font-bold items-center gap-2 justify-end cursor-pointer">
+                  <div className="faEye-style">
                     <FaEye></FaEye>
                     Show Password
                   </div>
                 ) : (
-                  <div className="flex font-bold items-center gap-2 justify-end cursor-pointer">
+                  <div className="faEye-style">
                     <FaEyeSlash />
                     Hide Password
                   </div>
@@ -140,18 +173,20 @@ const Login = () => {
                 </Link>
               </label>
             </div>
+            {/* 
 
+ */}
             <div className="form-control">
-              <button className="btn text-black border-0 shadow-xl hover:text-white normal-case text-xl font-bold  bg-orange-200 hover:bg-orange-400 ">
-                Login
-              </button>
+              <button className="terms">Login</button>
             </div>
+            {/* 
 
+ */}
             <div className="flex items-center justify-center gap-3 my-5">
               <div className="form-control">
                 <Link
                   onClick={GoogleSignIn}
-                  className="btn btn-sm bg-orange-200 hover:bg-orange-400 border-0 shadow-xl"
+                  className="btn btn-sm bg-[#98eecc] hover:bg-[#30f1f1] border-0 shadow-xl"
                   to="/"
                 >
                   <img className="w-5" src={google} alt="" />
@@ -160,7 +195,7 @@ const Login = () => {
               <div className="form-control">
                 <Link
                   onClick={GitHubSignIn}
-                  className="btn btn-sm  bg-orange-200 hover:bg-orange-400 border-0 shadow-xl"
+                  className="btn btn-sm  bg-[#98eecc] hover:bg-[#30f1f1] border-0 shadow-xl"
                   to="/"
                 >
                   <img
@@ -171,25 +206,31 @@ const Login = () => {
                 </Link>
               </div>
             </div>
+            {/* 
 
+ */}
             <p className="text-xl font-bold text-center">
-              New to this website..? <br /> Please{" "}
+              New to this website..? <br />{" "}
               <span className="">
                 <Link
                   to="/register"
-                  className="btn btn-sm my-5 mx-3 text-black hover:text-white bg-orange-200 hover:bg-orange-400  border-0 shadow-xl"
+                  className="btn btn-sm my-5 mx-3 text-black bg-[#FF4A4A] hover:bg-[#98eecc]  border-0 shadow-xl"
                 >
                   Register
                 </Link>
               </span>
             </p>
+            {/* 
 
+ */}
             {error && (
               <div className="text-red-600 bg-red-100 rounded-3xl px-2 py-1">
                 {error}
               </div>
             )}
+            {/* 
 
+ */}
             {success && (
               <div className="text-green-600 bg-green-100 rounded-3xl px-2 py-1">
                 {success}
