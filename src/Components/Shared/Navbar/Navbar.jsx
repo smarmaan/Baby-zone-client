@@ -1,13 +1,11 @@
-import { NavLink } from "react-router-dom";
-
-import Logo from "../../../../src/assets/Logo.png";
-import { AuthContext } from "../../../Providers/AuthProvider";
 import { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
+import { AuthContext } from "../../../Providers/AuthProvider";
+import Logo from "../../../../src/assets/Logo.png";
+
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
-
-  // const { displayName, photoURL } = user;
 
   const displayName = user?.displayName;
   const photoURL = user?.photoURL;
