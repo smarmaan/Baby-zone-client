@@ -15,7 +15,8 @@ AOS.init();
 const Gallery = () => {
   return (
     <div
-      data-aos="zoom-in"
+    // zoom-in
+      data-aos=""
       data-aos-offset="00"
       data-aos-delay="50"
       data-aos-duration="1000"
