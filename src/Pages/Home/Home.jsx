@@ -1,6 +1,7 @@
 import Banner from "../../Components/Banner/Banner";
 import BasicInfo from "../../Components/BasicInfo/BasicInfo";
 import CommentSection from "../../Components/CommentSection/CommentSection";
+import Gallery from "../../Components/Gallery/Gallery";
 import HomeText from "../../Components/HomeText/HomeText";
 import LeftCard from "../../Components/LeftCard/LeftCard";
 import RightSide from "../../Components/RightSide/RightSide";
@@ -27,8 +28,9 @@ const Home = () => {
 
       <BasicInfo></BasicInfo>
 
+      <Gallery></Gallery>
+
       <h2> marvel legends action figures</h2>
-      <h1>Gallery</h1>
       <h1>Tabs</h1>
 
       <div>

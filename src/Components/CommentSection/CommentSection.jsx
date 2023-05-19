@@ -9,12 +9,15 @@ import pro6 from "../../assets/profiles/profile-6.png";
 
 const CommentSection = () => {
   return (
-    <div>
-      <h2>Some Blocks/cards like reviews like comments starts...</h2>
-
+    <div className="my-20">
+      <div className="card md:w-[50%] mx-auto bg-[#fbffdc] text-[#0a4d7b] font-Cambria my-16">
+        <div className="card-body items-center rounded-2xl text-justify md:text-center shadow-2xl">
+          <h2 className="font-bold md:text-5xl underline">Comment Section</h2>
+        </div>
+      </div>
       <div>
         <Marquee
-          className="font-bold py-6 rounded-2xl bg-[#fbffdc]"
+          className="font-bold py-6 rounded-2xl bg-[#fbffdc]  shadow-2xl"
           pauseOnHover={true}
           speed={160}
         >
