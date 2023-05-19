@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { updateProfile } from "firebase/auth";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Lottie from "lottie-react";
-import register from "../../assets/register.json";
+import register from "../../assets/animation/register.json";
 
 const SignUp = () => {
   const [error, setError] = useState("");

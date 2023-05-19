@@ -10,12 +10,12 @@ import {
   FaInstagramSquare,
 } from "react-icons/fa";
 
-import companylogo1 from "../../assets/company-logo-1.jpeg";
-import companylogo2 from "../../assets/company-logo-2.jpeg";
-import companylogo3 from "../../assets/company-logo-3.jpeg";
-import companylogo4 from "../../assets/company-logo-4.jpeg";
-import companylogo5 from "../../assets/company-logo-5.jpeg";
-import companylogo6 from "../../assets/company-logo-6.jpeg";
+import companylogo1 from "../../assets/company-logos/company-logo-1.jpeg";
+import companylogo2 from "../../assets/company-logos/company-logo-2.jpeg";
+import companylogo3 from "../../assets/company-logos/company-logo-3.jpeg";
+import companylogo4 from "../../assets/company-logos/company-logo-4.jpeg";
+import companylogo5 from "../../assets/company-logos/company-logo-5.jpeg";
+import companylogo6 from "../../assets/company-logos/company-logo-6.jpeg";
 
 const RightSide = () => {
   return (

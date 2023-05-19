@@ -2,10 +2,10 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import google from "../../../src/assets/google.png";
-import github from "../../../src/assets/github.png";
+import google from "../../../src/assets/icons/google.png";
+import github from "../../../src/assets/icons/github.png";
 import Lottie from "lottie-react";
-import login from "../../assets/login.json";
+import login from "../../assets/animation/login.json";
 //
 //
 //

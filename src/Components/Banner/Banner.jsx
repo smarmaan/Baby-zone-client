@@ -1,7 +1,7 @@
-import banner1 from "../../assets/Marvel-Legends.jpg";
-import banner2 from "../../assets/Marvel-Legends-2.jpg";
-import banner3 from "../../assets/Marvel-Legends-3.jpg";
-import banner4 from "../../assets/Marvel-Legends-4.png";
+import banner1 from "../../assets/banner-images/Marvel-Legends.jpg";
+import banner2 from "../../assets/banner-images/Marvel-Legends-2.jpg";
+import banner3 from "../../assets/banner-images/Marvel-Legends-3.jpg";
+import banner4 from "../../assets/banner-images/Marvel-Legends-4.png";
 
 const Banner = () => {
   return (
