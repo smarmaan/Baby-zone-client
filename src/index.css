@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .active-btn {
-  @apply text-[#FF4A4A] font-bold flex my-auto text-2xl hover:text-3xl font-Cambria shadow-md px-2 bg-green-200 rounded;
+  @apply text-[#FF4A4A] font-bold underline flex my-auto text-2xl hover:text-3xl font-Cambria shadow-md px-2 bg-green-200 rounded;
 }
 .inactive-btn {
-  @apply text-[#0A4D68] font-bold flex my-auto text-xl hover:text-3xl font-Cambria  px-5 rounded;
+  @apply text-[#0A4D68] font-bold underline flex my-auto text-xl hover:text-3xl font-Cambria  px-5 rounded;
 }
 .terms {
   @apply btn text-black border-0 shadow-xl normal-case text-xl font-bold bg-[#FF4A4A] hover:bg-[#98eecc];

@@ -45,7 +45,7 @@ const Navbar = () => {
         className={({ isActive }) => (isActive ? "active-btn" : "inactive-btn")}
         to="/add-toy"
       >
-        Add A Toy
+        Add a Toy
       </NavLink>
 
       <NavLink
@@ -79,7 +79,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact bg-orange-200 dropdown-content mt-3 p-2 shadow rounded-box w-52"
           >
             {navItems}
           </ul>
@@ -92,7 +92,7 @@ const Navbar = () => {
           />
         </figure>
 
-        <h2 className="ml-6 font-extrabold text-3xl hover:text-4xl font-Cambria text-[#0A4D68] bg-[#98eecc] px-3 py-1 shadow-xl rounded-xl">
+        <h2 className="ml-6 font-extrabold md:text-3xl md:hover:text-4xl font-Cambria text-[#0A4D68] bg-[#98eecc] px-3 py-1 shadow-xl rounded-xl">
           Baby Zone
         </h2>
       </div>

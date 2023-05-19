@@ -8,11 +8,13 @@ import AddToy from "../Pages/AddToy/AddToy";
 import Blog from "../Pages/Blog/Blog";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
+import ErrorPage from "../Pages/Error/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -54,4 +56,6 @@ export const router = createBrowserRouter([
   },
 ]);
 
-{/* <PrivateRoute></PrivateRoute>; */}
+{
+  /* <PrivateRoute></PrivateRoute>; */
+}
