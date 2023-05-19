@@ -1,4 +1,5 @@
 import Banner from "../../Components/Banner/Banner";
+import BasicInfo from "../../Components/BasicInfo/BasicInfo";
 import CommentSection from "../../Components/CommentSection/CommentSection";
 import HomeText from "../../Components/HomeText/HomeText";
 import LeftCard from "../../Components/LeftCard/LeftCard";
@@ -24,14 +25,15 @@ const Home = () => {
 
       <HomeText></HomeText>
 
-      <div>
-        <CommentSection></CommentSection>
-      </div>
+      <BasicInfo></BasicInfo>
 
       <h2> marvel legends action figures</h2>
       <h1>Gallery</h1>
       <h1>Tabs</h1>
-      <h1>Comments cards marquee</h1>
+
+      <div>
+        <CommentSection></CommentSection>
+      </div>
     </div>
   );
 };

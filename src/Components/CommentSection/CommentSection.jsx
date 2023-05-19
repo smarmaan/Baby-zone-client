@@ -1,6 +1,11 @@
 import Marquee from "react-fast-marquee";
 
 import pro1 from "../../assets/profiles/profile-1.png";
+import pro2 from "../../assets/profiles/profile-2.png";
+import pro3 from "../../assets/profiles/profile-3.png";
+import pro4 from "../../assets/profiles/profile-4.png";
+import pro5 from "../../assets/profiles/profile-5.png";
+import pro6 from "../../assets/profiles/profile-6.png";
 
 const CommentSection = () => {
   return (
@@ -41,7 +46,7 @@ const CommentSection = () => {
           <div className=" card w-96 mx-7  bg-base-100 shadow-xl">
             <div className="avatar">
               <div className="w-24 rounded-xl">
-                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                <img src={pro2} />
               </div>
             </div>
 
@@ -63,7 +68,7 @@ const CommentSection = () => {
           <div className=" card w-96 mx-7  bg-base-100 shadow-xl">
             <div className="avatar">
               <div className="w-24 rounded-xl">
-                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                <img src={pro3} />
               </div>
             </div>
 
@@ -85,7 +90,7 @@ const CommentSection = () => {
           <div className=" card w-96 mx-7  bg-base-100 shadow-xl">
             <div className="avatar">
               <div className="w-24 rounded-xl">
-                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                <img src={pro4} />
               </div>
             </div>
 
@@ -104,7 +109,7 @@ const CommentSection = () => {
           <div className=" card w-96 mx-7  bg-base-100 shadow-xl">
             <div className="avatar">
               <div className="w-24 rounded-xl">
-                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                <img src={pro5} />
               </div>
             </div>
 
@@ -119,10 +124,10 @@ const CommentSection = () => {
           {/* 
 
  */}
-          <div className=" card w-96 mx-7  bg-base-100 shadow-xl">
+          <div className=" card w-96 mx-7 bg-base-100 shadow-xl ">
             <div className="avatar">
               <div className="w-24 rounded-xl">
-                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                <img src={pro6} />
               </div>
             </div>
 

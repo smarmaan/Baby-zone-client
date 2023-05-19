@@ -91,7 +91,7 @@ const RightSide = () => {
           pauseOnHover={true}
           speed={160}
         >
-          <p className=" text-xl md:text-2xl  mx-10 flex items-center gap-20">
+          <div className=" text-xl md:text-2xl  mx-10 flex items-center gap-20">
             <figure className="w-28 rounded-3xl h-10">
               <img className="rounded-3xl" src={companylogo1} alt="" />
             </figure>
@@ -110,7 +110,7 @@ const RightSide = () => {
             <figure className="w-28 rounded-3xl h-10">
               <img className="rounded-3xl" src={companylogo6} alt="" />
             </figure>
-          </p>
+          </div>
         </Marquee>
       </div>
     </div>
