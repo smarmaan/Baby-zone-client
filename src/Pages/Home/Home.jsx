@@ -6,8 +6,10 @@ const Home = () => {
   return (
     <div>
       <div className="my-10 gap-20 md:gap-4 grid md:grid-cols-12 text-center justify-center">
-        <div className="col-span-1
-         md:col-span-4">
+        <div
+          className="col-span-1
+         md:col-span-4 "
+        >
           <LeftCard />
         </div>
         <div className="col-span-1 md:col-span-7">

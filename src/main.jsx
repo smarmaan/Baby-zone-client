@@ -5,7 +5,7 @@ import { router } from "./routes/Routes.jsx";
 import AuthProvider from "./Providers/AuthProvider";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <div className="bg-[#98EECC]">
+  <div className="bg-[#98EECC] overflow-hidden">
     <AuthProvider>
       <RouterProvider router={router} />
     </AuthProvider>
