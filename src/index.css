@@ -14,6 +14,9 @@
 .faEye-style {
   @apply flex font-bold items-center gap-2 justify-end cursor-pointer;
 }
+.slides-btn-style {
+  @apply terms btn-circle ;
+}
 
 /* .btnAL {
   background-color:#fc0202 ;
