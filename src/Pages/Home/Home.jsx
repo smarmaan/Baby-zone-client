@@ -1,4 +1,5 @@
 import Banner from "../../Components/Banner/Banner";
+import HomeText from "../../Components/HomeText/HomeText";
 import LeftCard from "../../Components/LeftCard/LeftCard";
 import RightSide from "../../Components/RightSide/RightSide";
 
@@ -20,10 +21,9 @@ const Home = () => {
         </div>
       </div>
 
-      <h1>Left side picture</h1>
-      <h1>Right Side Link</h1>
+      <HomeText></HomeText>
 
-      <h2>Some text like paragraph</h2>
+      <h2> marvel legends action figures</h2>
       <h2>Some Blocks/cards like reviews like comments starts</h2>
       <h1>Gallery</h1>
       <h1>Tabs</h1>
