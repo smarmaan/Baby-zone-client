@@ -19,39 +19,39 @@ const Gallery = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         <figure className="w-96 mx-auto my-10">
-          <img className="w-full h-full rounded-3xl" src={pic1} alt="Drink" />
+          <img className="gallery-pics" src={pic1} alt="Drink" />
         </figure>
 
         <figure className="w-96 mx-auto my-10">
-          <img className="w-full h-full rounded-3xl" src={pic2} alt="Drink" />
+          <img className="gallery-pics" src={pic2} alt="Drink" />
         </figure>
 
         <figure className="w-96 mx-auto my-10">
-          <img className="w-full h-full rounded-3xl" src={pic3} alt="Drink" />
+          <img className="gallery-pics" src={pic3} alt="Drink" />
         </figure>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16">
         <figure className="w-96 mx-auto my-10">
-          <img className="w-full h-full rounded-3xl" src={pic4} alt="Drink" />
+          <img className="gallery-pics" src={pic4} alt="Drink" />
         </figure>
         <figure className="w-96 mx-auto my-10">
-          <img className="w-full h-full rounded-3xl" src={pic5} alt="Drink" />
+          <img className="gallery-pics" src={pic5} alt="Drink" />
         </figure>
         <figure className="w-96 mx-auto my-10">
-          <img className="w-full h-full rounded-3xl" src={pic6} alt="Drink" />
+          <img className="gallery-pics" src={pic6} alt="Drink" />
         </figure>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16">
         <figure className="w-96 mx-auto my-10">
-          <img className="w-full h-full rounded-3xl" src={pic7} alt="Drink" />
+          <img className="gallery-pics" src={pic7} alt="Drink" />
         </figure>
         <figure className="w-96 mx-auto my-10">
-          <img className="w-full h-full rounded-3xl" src={pic8} alt="Drink" />
+          <img className="gallery-pics" src={pic8} alt="Drink" />
         </figure>
         <figure className="w-96 mx-auto my-10">
-          <img className="w-full h-full rounded-3xl" src={pic9} alt="Drink" />
+          <img className="gallery-pics" src={pic9} alt="Drink" />
         </figure>
       </div>
     </div>
