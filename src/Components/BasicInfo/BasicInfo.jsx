@@ -1,8 +1,23 @@
 import CountUp from "react-countup";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+AOS.refresh();
+
 const BasicInfo = () => {
   return (
-    <div className="my-20 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <div
+      data-aos="zoom-in-up"
+      data-aos-offset="0"
+      data-aos-delay="0"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out-quart"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      className="my-20 grid grid-cols-1 md:grid-cols-4 gap-10"
+    >
       {/* 
 
 
