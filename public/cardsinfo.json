@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "Thor",
+    "name": "Thor",
+    "series": "Marvel Legends Series",
+    "brand": "Marvel",
+    "release_date": "2018-05-01",
+    "description": "This Marvel Legends Series Avengers Infinity War Thor figure features premium design, detail, and articulation for posing and display in a Marvel collection. This 6-inch-scale Thor figure features multiple points of articulation and is a great addition to any Marvel collection.",
+    "picture": "https://d2r44w8tsw4pqe.cloudfront.net/assets/Marvel/3166397-AMZ-hasbro-e0857(e3982)-marvel-legends-series-avengers-infinity-war-thor.jpg",
+    "price": 24.99,
+    "rating": 4.5
+  },
+  {
+    "_id": "Batman",
+    "name": "Batman",
+    "series": "DC Multiverse",
+    "brand": "DC",
+    "release_date": "2022-01-25",
+    "description": "This DC Multiverse Batman Classic TV Series Batman figure is based on the iconic Batman TV series from the 1960s. The figure features premium design, detail, and articulation for posing and display in a Batman collection. This 7-inch-scale Batman figure features multiple points of articulation and comes with a Batarang accessory.",
+    "picture": "https://hypebeast.com/image/2022/09/xm-studios-dc-comics-premium-collectibles-batman-classic-release-info-1.jpg",
+    "price": 19.99,
+    "rating": 4.7
+  },
+  {
+    "_id": "Cybertron Siege Voyager",
+    "name": "Cybertron Siege Voyager",
+    "series": "Transformers Generations War for Cybertron Siege",
+    "brand": "Transformers",
+    "release_date": "2019-08-01",
+    "description": "This Transformers Generations War for Cybertron Siege Voyager Class Optimus Prime figure converts from robot mode to truck mode in 21 steps. The figure features a detailed sculpt, metallic paint, and comes with a blaster accessory.",
+    "picture": "https://i.pinimg.com/originals/8d/56/ab/8d56ab0bfc0dab53b3aeb0a3d867f74c.png",
+    "price": 49.99,
+    "rating": 4.9
+  },
+  {
+    "_id": "Iron Man & Pepper",
+    "name": "Iron Man & Pepper",
+    "series": "Marvel Legends Series",
+    "brand": "Marvel",
+    "release_date": "2019-04-26",
+    "description": "This Marvel Legends Series Avengers Endgame Iron Man Mark 85 figure features premium design, detail, and articulation for posing and display in a Marvel collection. This 6-inch-scale Iron Man figure features multiple points of articulation and is a great addition to any Marvel collection.",
+    "picture": "https://i.pinimg.com/736x/fb/ba/43/fbba43614bfaca126c0a8e5fc84c8c69.jpg",
+    "price": 29.99,
+    "rating": 4.8
+  },
+  {
+    "_id": "Iron Man Mark 85",
+    "name": "Iron Man Mark 85",
+    "series": "Marvel Legends Series",
+    "brand": "Marvel",
+    "release_date": "2019-04-26",
+    "description": "This Marvel Legends Series Avengers Endgame Iron Man Mark 85 figure features premium design, detail, and articulation for posing and display in a Marvel collection. This 6-inch-scale Iron Man figure features multiple points of articulation and is a great addition to any Marvel collection.",
+    "picture": "https://m.media-amazon.com/images/I/71aBs+xbdTL._AC_SL1500_.jpg",
+    "price": 29.99,
+    "rating": 4.8
+  }
+]

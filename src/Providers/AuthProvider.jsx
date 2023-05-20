@@ -5,7 +5,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   GoogleAuthProvider,
-  GithubAuthProvider,
+  // GithubAuthProvider,
   signInWithPopup,
   signOut,
   onAuthStateChanged,
@@ -21,7 +21,7 @@ const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   const googleProvider = new GoogleAuthProvider();
-  const githubProvider = new GithubAuthProvider();
+  // const githubProvider = new GithubAuthProvider();
   //
   //
   //
@@ -52,10 +52,14 @@ const AuthProvider = ({ children }) => {
   //
   //
   //
-  const handleGitHubSignIn = () => {
-    setLoading(true);
-    return signInWithPopup(auth, githubProvider);
-  };
+
+
+  // const handleGitHubSignIn = () => {
+  //   setLoading(true);
+  //   return signInWithPopup(auth, githubProvider);
+  // };
+
+
   //
   //
   //
@@ -73,6 +77,7 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (loggedUser) => {
       setUser(loggedUser);
+      console.log(loggedUser);
       setLoading(false);
     });
 
@@ -90,7 +95,7 @@ const AuthProvider = ({ children }) => {
     logout,
     loading,
     handleGoogleSignIn,
-    handleGitHubSignIn,
+    // handleGitHubSignIn,
   };
   //
   //

@@ -10,7 +10,8 @@ const Navbar = () => {
   const displayName = user?.displayName;
   const photoURL = user?.photoURL;
 
-  console.log(displayName);
+  // console.log(displayName);
+  // console.log(photoURL);
 
   const handleLogout = () => {
     logout()
@@ -35,18 +36,27 @@ const Navbar = () => {
       >
         All Toys
       </NavLink>
-      <NavLink
-        className={({ isActive }) => (isActive ? "active-btn" : "inactive-btn")}
-        to="/my-toys"
-      >
-        My Toys
-      </NavLink>
-      <NavLink
-        className={({ isActive }) => (isActive ? "active-btn" : "inactive-btn")}
-        to="/add-toy"
-      >
-        Add a Toy
-      </NavLink>
+
+      {user && (
+        <>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "active-btn" : "inactive-btn"
+            }
+            to="/my-toys"
+          >
+            My Toys
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "active-btn" : "inactive-btn"
+            }
+            to="/add-toy"
+          >
+            Add a Toy
+          </NavLink>
+        </>
+      )}
 
       <NavLink
         className={({ isActive }) => (isActive ? "active-btn" : "inactive-btn")}

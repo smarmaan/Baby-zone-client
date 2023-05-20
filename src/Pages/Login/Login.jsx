@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import google from "../../../src/assets/icons/google.png";
-import github from "../../../src/assets/icons/github.png";
+// import github from "../../../src/assets/icons/github.png";
 import Lottie from "lottie-react";
 import login from "../../assets/animation/login.json";
 //
@@ -12,8 +12,12 @@ import login from "../../assets/animation/login.json";
 //
 //
 const Login = () => {
-  const { signIn, user, handleGoogleSignIn, handleGitHubSignIn } =
-    useContext(AuthContext);
+  const {
+    signIn,
+    user,
+    handleGoogleSignIn,
+    //  handleGitHubSignIn
+  } = useContext(AuthContext);
   const [passwordType, setPasswordType] = useState("password");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -83,18 +87,20 @@ const Login = () => {
   //
   //
   //
-  const GitHubSignIn = () => {
-    handleGitHubSignIn()
-      .then((result) => {
-        console.log(result);
-        navigate(from, { replace: true });
-      })
-      .catch((error) => {
-        console.log(error.message);
-        setError(error.message);
-      });
-  };
+
+  // const GitHubSignIn = () => {
+  //   handleGitHubSignIn()
+  //     .then((result) => {
+  //       console.log(result);
+  //       navigate(from, { replace: true });
+  //     })
+  //     .catch((error) => {
+  //       console.log(error.message);
+  //       setError(error.message);
+  //     });
+  // };
   console.log(user);
+
   //
   //
   //
@@ -192,7 +198,7 @@ const Login = () => {
                   <img className="w-5" src={google} alt="" />
                 </Link>
               </div>
-              <div className="form-control">
+              {/* <div className="form-control">
                 <Link
                   onClick={GitHubSignIn}
                   className="btn btn-sm  bg-[#98eecc] hover:bg-[#30f1f1] border-0 shadow-xl"
@@ -204,7 +210,7 @@ const Login = () => {
                     alt=""
                   />{" "}
                 </Link>
-              </div>
+              </div> */}
             </div>
             {/* 
 
