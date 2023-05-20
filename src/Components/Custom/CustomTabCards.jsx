@@ -3,7 +3,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 
 const CustomTabCards = ({ data }) => {
-  const { name, picture, price, rating } = data;
+  const { name, picture, price, rating, available_quantity } = data;
 
   const { user } = useContext(AuthContext);
 
@@ -23,10 +23,19 @@ const CustomTabCards = ({ data }) => {
           <img src={picture} className="w-full h-full" alt={name} />
         </figure>
         <div className="card-body  shadow-xl drop-shadow-xl ">
-          <h2 className="card-title">{name}</h2>
-          <h2 className="card-title">price: {price}</h2>
-          <h2 className="card-title">rating: {rating}</h2>
+          <h2 className="card-title text-4xl text-[#ff4a4a] shadow-xl drop-shadow-xl text-center mx-auto px-2 rounded-xl">
+            {name}
+          </h2>
 
+          <div className="mx-5">
+            <h2 className="card-title text-[#0a4d7b]">
+              Price: <span className="text-[#ff4a4a]"> $ {price}</span>{" "}
+            </h2>
+            <h2 className="card-title">Rating: {rating}</h2>
+            <h2 className="card-title">
+              Available Quantity: {available_quantity}
+            </h2>
+          </div>
           <div className="card-actions justify-end">
             <Link>
               <button onClick={handleToast} className="terms">

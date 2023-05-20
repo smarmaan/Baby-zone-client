@@ -42,6 +42,7 @@ const CustomTab = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 card w-[100%] h-[100%]">
               {cardData
                 .filter((data) => data.brand === "Marvel")
+                .slice(0, 3)
                 .map((data) => (
                   <CustomTabCards key={data._id} data={data}></CustomTabCards>
                 ))}
@@ -53,6 +54,7 @@ const CustomTab = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 card w-[100%] h-[100%]">
               {cardData
                 .filter((data) => data.brand === "Transformers")
+                .slice(0, 3)
                 .map((data) => (
                   <CustomTabCards key={data._id} data={data}></CustomTabCards>
                 ))}
@@ -64,6 +66,7 @@ const CustomTab = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 card w-[100%] h-[100%]">
               {cardData
                 .filter((data) => data.brand === "DC")
+                .slice(0, 3)
                 .map((data) => (
                   <CustomTabCards key={data._id} data={data}></CustomTabCards>
                 ))}
