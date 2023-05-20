@@ -6,7 +6,7 @@ import { useState } from "react";
 const CustomTab = () => {
   const [cardData, setCardData] = useState([]);
 
-  fetch("/cardsinfo.json").then((res) =>
+  fetch("http://localhost:5000/all-toys").then((res) =>
     res.json().then((data) => setCardData(data))
   );
 

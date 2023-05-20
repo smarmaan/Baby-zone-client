@@ -3,7 +3,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 
 const CustomTabCards = ({ data }) => {
-  const { name, picture, price, rating, available_quantity } = data;
+  const { _id, name, picture, price, rating, available_quantity } = data;
 
   const { user } = useContext(AuthContext);
 
@@ -37,7 +37,7 @@ const CustomTabCards = ({ data }) => {
             </h2>
           </div>
           <div className="card-actions justify-end">
-            <Link>
+            <Link to={`/toy-details/${_id}`}>
               <button onClick={handleToast} className="terms">
                 View Details
               </button>

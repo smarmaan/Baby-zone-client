@@ -1,6 +1,5 @@
 [
   {
-    "_id": "1",
     "name": "Thor",
     "series": "Marvel Legends Series",
     "brand": "Marvel",
@@ -15,7 +14,6 @@
     "available_quantity": 10
   },
   {
-    "_id": "2",
     "name": "Batman",
     "series": "DC Multiverse",
     "brand": "DC",
@@ -30,7 +28,6 @@
     "available_quantity": 8
   },
   {
-    "_id": "3",
     "name": "Siege Voyager",
     "series": "Transformers Generations War for Cybertron Siege",
     "brand": "Transformers",
@@ -45,7 +42,6 @@
     "available_quantity": 5
   },
   {
-    "_id": "4",
     "name": "Iron Man & Pepper",
     "series": "Marvel Legends Series",
     "brand": "Marvel",
@@ -60,7 +56,6 @@
     "available_quantity": 12
   },
   {
-    "_id": "5",
     "name": "Iron Man Mark 85",
     "series": "Marvel Legends Series",
     "brand": "Marvel",
@@ -75,7 +70,6 @@
     "available_quantity": 7
   },
   {
-    "_id": "6",
     "name": "Spider-Man",
     "series": "Marvel Legends Series",
     "brand": "Marvel",
@@ -90,7 +84,6 @@
     "available_quantity": 15
   },
   {
-    "_id": "7",
     "name": "Superman",
     "series": "DC Multiverse",
     "brand": "DC",
@@ -105,7 +98,6 @@
     "available_quantity": 9
   },
   {
-    "_id": "8",
     "name": "Bumblebee",
     "series": "Transformers Generations War for Cybertron",
     "brand": "Transformers",
@@ -120,7 +112,6 @@
     "available_quantity": 11
   },
   {
-    "_id": "9",
     "name": "Captain America",
     "series": "Marvel Legends Series",
     "brand": "Marvel",
@@ -135,7 +126,6 @@
     "available_quantity": 6
   },
   {
-    "_id": "10",
     "name": "Wonder Woman",
     "series": "DC Multiverse",
     "brand": "DC",
@@ -150,7 +140,6 @@
     "available_quantity": 14
   },
   {
-    "_id": "11",
     "name": "Optimus Prime",
     "series": "Transformers Studio Series",
     "brand": "Transformers",
@@ -165,7 +154,6 @@
     "available_quantity": 3
   },
   {
-    "_id": "12",
     "name": "Hulk",
     "series": "Marvel Legends Series",
     "brand": "Marvel",
@@ -180,7 +168,6 @@
     "available_quantity": 2
   },
   {
-    "_id": "13",
     "name": "Joker",
     "series": "DC Multiverse",
     "brand": "DC",
@@ -195,7 +182,6 @@
     "available_quantity": 10
   },
   {
-    "_id": "14",
     "name": "Megatron",
     "series": "Transformers Generations War for Cybertron",
     "brand": "Transformers",
@@ -210,7 +196,6 @@
     "available_quantity": 7
   },
   {
-    "_id": "15",
     "name": "Black Widow",
     "series": "Marvel Legends Series",
     "brand": "Marvel",
@@ -225,7 +210,6 @@
     "available_quantity": 13
   },
   {
-    "_id": "16",
     "name": "Aquaman",
     "series": "DC Multiverse",
     "brand": "DC",
@@ -240,7 +224,6 @@
     "available_quantity": 8
   },
   {
-    "_id": "17",
     "name": "Optimus Prime",
     "series": "Transformers Masterpiece",
     "brand": "Transformers",
@@ -255,7 +238,6 @@
     "available_quantity": 5
   },
   {
-    "_id": "18",
     "name": "Deadpool",
     "series": "Marvel Legends Series",
     "brand": "Marvel",
@@ -270,7 +252,6 @@
     "available_quantity": 4
   },
   {
-    "_id": "19",
     "name": "Harley Quinn",
     "series": "DC Multiverse",
     "brand": "DC",
@@ -285,7 +266,6 @@
     "available_quantity": 9
   },
   {
-    "_id": "20",
     "name": "Soundwave",
     "series": "Transformers Generations War for Cybertron",
     "brand": "Transformers",
