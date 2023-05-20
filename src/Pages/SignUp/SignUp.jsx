@@ -1,5 +1,5 @@
-import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { updateProfile } from "firebase/auth";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Lottie from "lottie-react";
@@ -10,6 +10,9 @@ const SignUp = () => {
   const [success, setSuccess] = useState("");
   const { createUser } = useContext(AuthContext);
   const [accepted, setAccepted] = useState(false);
+
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -47,13 +50,24 @@ const SignUp = () => {
       photoURL: photo,
     })
       .then(() => {
-        console.log("user name updated");
+        // console.log("user name updated");
       })
       .catch((error) => {
         console.error(error);
         setError(error.message);
       });
   };
+
+  const handleUser = () => {
+    if (user) {
+      alert(`Registration Successful`);
+      navigate("/");
+    }
+  };
+
+  useEffect(() => {
+    handleUser();
+  }, [user]);
 
   const RegistrationSuccessful = (
     <>
@@ -177,30 +191,36 @@ const SignUp = () => {
  */}
             <div className="form-control mt-6">
               {accepted ? (
-                <button className="terms">Register</button>
+                <button onClick={handleUser} className="terms">
+                  Register
+                </button>
               ) : (
                 <button className="terms btn-disabled">Register</button>
               )}
             </div>
-            {/* 
+          </form>
+
+          {/* 
 
  */}
-            <p className="text-xl font-bold text-center my-5">
-              Already have an account?{" "}
-              <span>
-                <Link
-                  to="/login"
-                  className="btn btn-sm my-5 mx-3 text-black bg-[#FF4A4A] hover:bg-[#98eecc]  border-0 shadow-xl"
-                >
-                  Login
-                </Link>
-              </span>
-            </p>
-            {/* 
+          <p className="text-xl font-bold text-center">
+            Already have an account?{" "}
+            <span>
+              <Link
+                to="/login"
+                className="btn btn-sm my-5 mx-3 text-black bg-[#FF4A4A] hover:bg-[#98eecc]  border-0 shadow-xl"
+              >
+                Login
+              </Link>
+            </span>
+          </p>
+          {/* 
 
  */}
+
+          <div className="mb-5 mx-5 ">
             {error && (
-              <div className="text-red-600 bg-red-100 text-center rounded-3xl px-2 py-1">
+              <div className="text-red-600 bg-red-100 text-center rounded-3xl p-5">
                 {error}
               </div>
             )}
@@ -208,11 +228,12 @@ const SignUp = () => {
 
  */}
             {success && (
-              <div className="text-green-600 bg-green-100 rounded-3xl px-2 py-1">
+              <div className="text-green-600 bg-green-100 rounded-3xl  p-5">
                 {success}{" "}
               </div>
             )}
-          </form>
+          </div>
+
           {/* 
 
  */}

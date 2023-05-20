@@ -53,12 +53,10 @@ const AuthProvider = ({ children }) => {
   //
   //
 
-
   // const handleGitHubSignIn = () => {
   //   setLoading(true);
   //   return signInWithPopup(auth, githubProvider);
   // };
-
 
   //
   //
@@ -77,7 +75,7 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (loggedUser) => {
       setUser(loggedUser);
-      console.log(loggedUser);
+      // console.log(loggedUser);
       setLoading(false);
     });
 

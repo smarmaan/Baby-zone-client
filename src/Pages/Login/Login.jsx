@@ -188,7 +188,7 @@ const Login = () => {
             {/* 
 
  */}
-            <div className="flex items-center justify-center gap-3 my-5">
+            <div className="flex items-center justify-center gap-3 mt-5">
               <div className="form-control">
                 <Link
                   onClick={GoogleSignIn}
@@ -215,22 +215,26 @@ const Login = () => {
             {/* 
 
  */}
-            <p className="text-xl font-bold text-center">
-              New to this website..? <br />{" "}
-              <span className="">
-                <Link
-                  to="/register"
-                  className="btn btn-sm my-5 mx-3 text-black bg-[#FF4A4A] hover:bg-[#98eecc]  border-0 shadow-xl"
-                >
-                  Register
-                </Link>
-              </span>
-            </p>
-            {/* 
+          </form>
+
+          <p className="text-xl font-bold text-center">
+            New to this website..? <br />{" "}
+            <span className="">
+              <Link
+                to="/register"
+                className="btn btn-sm my-5 mx-3 text-black bg-[#FF4A4A] hover:bg-[#98eecc]  border-0 shadow-xl"
+              >
+                Register
+              </Link>
+            </span>
+          </p>
+          {/* 
 
  */}
+
+          <div className="mb-5 mx-5 ">
             {error && (
-              <div className="text-red-600 bg-red-100 rounded-3xl px-2 py-1">
+              <div className="text-red-600 bg-red-100 rounded-3xl p-5">
                 {error}
               </div>
             )}
@@ -238,11 +242,11 @@ const Login = () => {
 
  */}
             {success && (
-              <div className="text-green-600 bg-green-100 rounded-3xl px-2 py-1">
+              <div className="text-green-600 bg-green-100 rounded-3xl p-5">
                 {success}
               </div>
             )}
-          </form>
+          </div>
         </div>
       </div>
     </div>
