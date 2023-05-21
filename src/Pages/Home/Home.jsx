@@ -13,6 +13,12 @@ const Home = () => {
 
   return (
     <div>
+      <div className="card-body md:text-3xl font-Cambria font-bold text-red-800 text-center bg-[#fbffdc] my-10 rounded-2xl shadow-2xl drop-shadow-xl">
+        <span className="text-4xl"> NOTE </span>
+        <br /> &#34;Please Reload the website for better performance after
+        Registering your Account&#34;..
+      </div>
+
       <div className="my-10 gap-20 md:gap-4 grid md:grid-cols-12 text-center justify-center">
         <div
           className="col-span-1
