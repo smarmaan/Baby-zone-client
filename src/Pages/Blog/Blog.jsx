@@ -1,5 +1,8 @@
 import useTitle from "../../Hooks/useTitle";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const Blog = () => {
   useTitle("BABY ZONE | BLOG");
 
@@ -11,7 +14,17 @@ const Blog = () => {
 
              */}
 
-        <section className="mt-5 w-[100%] bg-orange-100 gap-9 p-8 mx-auto rounded-2xl drop-shadow-2xl mb-10">
+        <section
+          data-aos="zoom-in"
+          data-aos-offset="00"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="mt-5 w-[100%] bg-orange-100 gap-9 p-8 mx-auto rounded-2xl drop-shadow-2xl mb-10"
+        >
           <h1 className="font-bold text-3xl text-center mb-5 p-5 pt-5 mt-4">
             What is an access token and refresh token? How do they work and
             where should we store them on the client-side?{" "}
@@ -124,7 +137,17 @@ const Blog = () => {
 
  */}
 
-        <section className="mt-5 w-[100%] bg-orange-100 gap-9 p-8 mx-auto rounded-2xl drop-shadow-2xl mb-10">
+        <section
+          data-aos="zoom-in"
+          data-aos-offset="00"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="mt-5 w-[100%] bg-orange-100 gap-9 p-8 mx-auto rounded-2xl drop-shadow-2xl mb-10"
+        >
           <h1 className="font-bold text-3xl text-center mb-5 p-5 pt-5 mt-4">
             Compare between SQL and NoSQL databases{" "}
           </h1>
@@ -303,7 +326,17 @@ const Blog = () => {
 
  */}
 
-        <section className="mt-5 w-[100%] bg-orange-100 gap-9 p-8 mx-auto rounded-2xl drop-shadow-2xl mb-10">
+        <section
+          data-aos="zoom-in"
+          data-aos-offset="00"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="mt-5 w-[100%] bg-orange-100 gap-9 p-8 mx-auto rounded-2xl drop-shadow-2xl mb-10"
+        >
           <h1 className="font-bold text-3xl text-center mb-5 p-5 pt-5 mt-4">
             What is &#34;express js&#34; & &#34;NestJS&#34; ?{" "}
           </h1>

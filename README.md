@@ -14,7 +14,7 @@
 
 - **"MOBILE RESPONSIVE"...**
 
-<!-- All the requirements + Bonus tasks were checked... GOOD TO GO FOR --- **60/60** -->
+All the requirements + Bonus tasks were checked... GOOD TO GO FOR --- **60/60**
 
 **Live Link:**
 
