@@ -47,7 +47,7 @@ const TableData = ({ toy, index, handleDelete, setMyToys, myToys }) => {
         console.log(result);
 
         if (result.modifiedCount > 0) {
-          alert(`updated Successfully`);
+          alert(`Data updated Successfully`);
 
           const remaining = myToys.filter((toy) => toy._id !== _id);
 

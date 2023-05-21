@@ -11,7 +11,7 @@ const CustomTabCards = ({ data }) => {
 
   const handleToast = () => {
     if (!user) {
-      alert(`Please Login`);
+      alert(`You have to log in first to view details`);
       navigate("/login");
     }
   };
