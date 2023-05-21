@@ -31,14 +31,14 @@ const CommentSection = () => {
       </div>
       <div>
         <div
-          data-aos="zoom-in"
-          data-aos-offset="00"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
+          // data-aos="zoom-in"
+          // data-aos-offset="00"
+          // data-aos-delay="50"
+          // data-aos-duration="1000"
+          // data-aos-easing="ease-in-out"
+          // data-aos-mirror="true"
+          // data-aos-once="false"
+          // data-aos-anchor-placement="top-center"
         >
           <Marquee
             className="font-bold py-6 rounded-2xl bg-[#fbffdc]  shadow-2xl"
