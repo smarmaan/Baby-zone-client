@@ -124,7 +124,179 @@ const Blog = () => {
 
  */}
 
-        {/* Compare SQL and NoSQL databases */}
+        <section className="mt-5 w-[100%] bg-orange-100 gap-9 p-8 mx-auto rounded-2xl drop-shadow-2xl mb-10">
+          <h1 className="font-bold text-3xl text-center mb-5 p-5 pt-5 mt-4">
+            Compare between SQL and NoSQL databases{" "}
+          </h1>
+
+          <p className="text-justify  md:text-center text-cyan-800 font-medium mb-7 pb-10 p-5">
+            SQL and NoSQL databases are two distinct types of database
+            management systems that differ in their data models, query
+            languages, scalability, and use cases.
+            <br />
+            Here is a comparison between SQL and NoSQL databases:
+            <h1 className="font-bold text-xl text-center mb-5 p-5 pt-5 mt-4 text-red-800">
+              Data Model:
+            </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 my-5 gap-5 ">
+              <div className="text-left bg-green-200 p-5 rounded-xl shadow-xl">
+                <span className=" text-xl font-bold text-red-800">
+                  {" "}
+                  Data Model SQL:{" "}
+                </span>
+                <br />
+                SQL databases, also known as relational databases, use a
+                structured data model based on tables with predefined schemas,
+                where data is organized into rows and columns. Relationships
+                between tables are established using foreign keys.
+              </div>
+              <div className="text-right  bg-green-200 p-5">
+                <span className=" text-xl font-bold text-red-800">
+                  {" "}
+                  Data Model NoSQL:{" "}
+                </span>
+                <br /> NoSQL databases employ a flexible and schema-less data
+                model. They can store various data formats, including key-value
+                pairs, documents, wide-column stores, and graph structures.
+                NoSQL databases are designed for handling unstructured or
+                semi-structured data.
+              </div>
+            </div>
+            <br />
+            <br />
+            {/* 
+
+
+ */}
+            <h1 className="font-bold text-xl text-center mb-5 p-5 pt-5 text-red-800">
+              Query Language:
+            </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 my-5 gap-5 ">
+              <div className="text-left bg-green-200 p-5 rounded-xl shadow-xl">
+                <span className="text-xl font-bold text-red-800">
+                  {" "}
+                  Query Language SQL:{" "}
+                </span>
+                <br />
+                SQL databases use the Structured Query Language (SQL) for
+                defining and manipulating data. SQL provides a standardized and
+                powerful language for querying and managing relational
+                databases, with support for complex operations like joins,
+                aggregations, and transactions.
+              </div>
+              <div className="text-right  bg-green-200 p-5">
+                <span className="text-xl font-bold text-red-800">
+                  {" "}
+                  Query Language NoSQL:{" "}
+                </span>
+                <br /> NoSQL databases are designed for horizontal scalability
+                from the start. They can distribute data across multiple servers
+                or clusters, providing high scalability and performance. NoSQL
+                databases excel in handling large amounts of data and high
+                traffic loads.
+              </div>
+            </div>
+            {/* 
+
+
+
+ */}
+            <h1 className="font-bold text-xl text-center mb-5 p-5 pt-5 mt-4 text-red-800">
+              Scalability:
+            </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 my-5 gap-5 ">
+              <div className="text-left bg-green-200 p-5 rounded-xl shadow-xl">
+                <span className="text-xl font-bold text-red-800">
+                  {" "}
+                  Scalability SQL:{" "}
+                </span>
+                <br />
+                SQL databases traditionally scale vertically by upgrading
+                hardware resources like CPU, RAM, and storage capacity. However,
+                modern SQL databases also support horizontal scalability through
+                techniques like sharding, replication, and clustering.
+              </div>
+              <div className="text-right  bg-green-200 p-5">
+                <span className="text-xl font-bold text-red-800">
+                  {" "}
+                  Scalability NoSQL:{" "}
+                </span>
+                <br /> NoSQL databases are designed for horizontal scalability
+                from the start. They can distribute data across multiple servers
+                or clusters, providing high scalability and performance. NoSQL
+                databases excel in handling large amounts of data and high
+                traffic loads.
+              </div>
+            </div>
+            {/* 
+
+
+
+ */}
+            <h1 className="font-bold text-xl text-center mb-5 p-5 pt-5 mt-4 text-red-800">
+              Data Consistency:
+            </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 my-5 gap-5 ">
+              <div className="text-left bg-green-200 p-5 rounded-xl shadow-xl">
+                <span className="text-xl font-bold text-red-800">
+                  {" "}
+                  Data Consistency SQL:{" "}
+                </span>
+                <br />
+                SQL databases typically prioritize data consistency and ACID
+                (Atomicity, Consistency, Isolation, Durability) properties. ACID
+                transactions ensure that database operations are executed
+                reliably and maintain data integrity.
+              </div>
+              <div className="text-right  bg-green-200 p-5">
+                <span className="text-xl font-bold text-red-800">
+                  {" "}
+                  Data Consistency NoSQL:{" "}
+                </span>
+                <br /> NoSQL databases often relax consistency in favor of high
+                availability and scalability. They may prioritize eventual
+                consistency, where data changes propagate to all replicas over
+                time. NoSQL databases provide BASE (Basically Available, Soft
+                state, Eventual consistency) properties, which focus on
+                availability and partition tolerance.
+              </div>
+            </div>
+            {/* 
+
+
+ */}
+            <h1 className="font-bold text-xl text-center mb-5 p-5 pt-5 mt-4 text-red-800">
+              Use Cases:
+            </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 my-5 gap-5 ">
+              <div className="text-left bg-green-200 p-5 rounded-xl shadow-xl">
+                <span className="text-xl font-bold text-red-800">
+                  {" "}
+                  Use Cases SQL:{" "}
+                </span>
+                <br />
+                SQL databases are well-suited for applications that require
+                complex querying, data integrity, and structured relationships.
+                They are commonly used in transactional systems, financial
+                applications, content management systems, and applications with
+                well-defined schemas.
+              </div>
+              <div className="text-right  bg-green-200 p-5">
+                <span className="text-xl font-bold text-red-800">
+                  {" "}
+                  Use Cases NoSQL:{" "}
+                </span>
+                <br /> NoSQL databases are suitable for handling unstructured or
+                rapidly evolving data. They are often used in real-time
+                analytics, content-driven applications, IoT (Internet of Things)
+                systems, social networks, and applications that require flexible
+                and scalable data storage.
+              </div>
+            </div>
+            --------------------
+            <strong className="font-bold text-lg text-red-800"></strong>
+          </p>
+        </section>
 
         {/* 
 
