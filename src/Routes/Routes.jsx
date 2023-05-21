@@ -25,6 +25,7 @@ export const router = createBrowserRouter([
         path: "/all-toys",
         element: <AllToys />,
         loader: () => fetch(`https://baby-zone-server.vercel.app/all-toys`),
+        // loader: () => fetch(`http://localhost:5000/all-toys`),
       },
       {
         path: "/toy-details/:id",
