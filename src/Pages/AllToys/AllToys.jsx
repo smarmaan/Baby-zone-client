@@ -1,7 +1,12 @@
 import { useLoaderData } from "react-router-dom";
 import TableData from "../../Components/TableData/TableData";
+import useTitle from "../../Hooks/useTitle";
 
 const AllToys = () => {
+
+  useTitle("BABY ZONE | ALL TOYS")
+
+
   const allToys = useLoaderData();
 
   console.log(allToys);

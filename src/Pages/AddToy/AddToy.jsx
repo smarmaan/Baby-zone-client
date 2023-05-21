@@ -1,6 +1,9 @@
 import { useForm } from "react-hook-form";
+import useTitle from "../../Hooks/useTitle";
 
 const AddToy = () => {
+  useTitle("BABY ZONE | ADD TOYS");
+
   const {
     register,
     formState: { errors },

@@ -5,12 +5,15 @@ import {
   BsFillArrowDownCircleFill,
   BsFillArrowUpCircleFill,
 } from "react-icons/bs";
+import useTitle from "../../Hooks/useTitle";
 
-// import { useLocation } from "react-router-dom";
 
 const MyToys = () => {
-  //   const location = useLocation();
-  //   console.log(location);
+
+
+  useTitle("BABY ZONE | MY TOYS")
+
+
 
   const { user } = useContext(AuthContext);
 

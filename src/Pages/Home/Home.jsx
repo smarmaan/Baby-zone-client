@@ -6,8 +6,11 @@ import Gallery from "../../Components/Gallery/Gallery";
 import HomeText from "../../Components/HomeText/HomeText";
 import LeftCard from "../../Components/LeftCard/LeftCard";
 import RightSide from "../../Components/RightSide/RightSide";
+import useTitle from "../../Hooks/useTitle";
 
 const Home = () => {
+  useTitle("BABY ZONE | HOMEPAGE");
+
   return (
     <div>
       <div className="my-10 gap-20 md:gap-4 grid md:grid-cols-12 text-center justify-center">
@@ -32,7 +35,7 @@ const Home = () => {
       <Gallery></Gallery>
 
       <h2> marvel legends action figures</h2>
-      
+
       <CustomTab></CustomTab>
 
       <div>

@@ -4,8 +4,11 @@ import { updateProfile } from "firebase/auth";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Lottie from "lottie-react";
 import register from "../../assets/animation/register.json";
+import useTitle from "../../Hooks/useTitle";
 
 const SignUp = () => {
+  useTitle("BABY ZONE | SIGN UP");
+
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const { createUser } = useContext(AuthContext);

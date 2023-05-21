@@ -6,12 +6,15 @@ import google from "../../../src/assets/icons/google.png";
 // import github from "../../../src/assets/icons/github.png";
 import Lottie from "lottie-react";
 import login from "../../assets/animation/login.json";
+import useTitle from "../../Hooks/useTitle";
 //
 //
 //
 //
 //
 const Login = () => {
+  useTitle("BABY ZONE | LOGIN");
+
   const {
     signIn,
     user,

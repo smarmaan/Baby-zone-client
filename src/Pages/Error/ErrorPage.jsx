@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import error from "../../assets/animation/error-404.json";
+import useTitle from "../../Hooks/useTitle";
 
 const ErrorPage = () => {
+
+
+  useTitle("BABY ZONE | ERROR")
+
+
   return (
     <div className="hero min-h-screen">
       <div className="text-center text-neutral-content">
