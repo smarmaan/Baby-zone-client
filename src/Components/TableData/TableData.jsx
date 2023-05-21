@@ -5,7 +5,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import { MdDelete, MdEditDocument } from "react-icons/md";
 import { useForm } from "react-hook-form";
 
-const TableData = ({ toy, index, handleDelete, handleModifiedCountChange }) => {
+const TableData = ({ toy, index, handleDelete, setMyToys, myToys }) => {
   const { user } = useContext(AuthContext);
 
   const location = useLocation();
@@ -21,6 +21,7 @@ const TableData = ({ toy, index, handleDelete, handleModifiedCountChange }) => {
     available_quantity,
     picture,
     brand,
+    rating,
   } = toy;
 
   const {
@@ -48,7 +49,19 @@ const TableData = ({ toy, index, handleDelete, handleModifiedCountChange }) => {
         if (result.modifiedCount > 0) {
           alert(`updated Successfully`);
 
-          handleModifiedCountChange(result.modifiedCount);
+          const remaining = myToys.filter((toy) => toy._id !== _id);
+
+          let updated = myToys.find((toy) => toy._id === _id);
+
+          console.log(updated);
+
+          updated = data;
+
+          console.log(data);
+
+          const newUpdatedToy = [updated, ...remaining];
+
+          setMyToys(newUpdatedToy);
         }
 
         reset();
@@ -220,6 +233,7 @@ CODE
                           <input
                             className="input input-bordered"
                             placeholder="Ratings"
+                            defaultValue={rating}
                             {...register("rating", {
                               required: true,
                             })}
@@ -242,6 +256,7 @@ CODE
                           <input
                             className="input input-bordered"
                             placeholder="Price"
+                            defaultValue={price}
                             {...register("price", {
                               required: true,
                             })}

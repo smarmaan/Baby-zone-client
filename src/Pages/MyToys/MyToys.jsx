@@ -1,6 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import TableData from "../../Components/TableData/TableData";
+import {
+  BsFillArrowDownCircleFill,
+  BsFillArrowUpCircleFill,
+} from "react-icons/bs";
+
 // import { useLocation } from "react-router-dom";
 
 const MyToys = () => {
@@ -12,14 +17,20 @@ const MyToys = () => {
   const [myToys, setMyToys] = useState([]);
 
   const [modifiedCount, setModifiedCount] = useState(0);
+  const [sortingValue, setSortingValue] = useState("asc");
 
-  const url = `http://localhost:5000/my-toys?email=${user.email}`;
+  const url = `http://localhost:5000/my-toys?email=${user.email}&sort=${sortingValue}`;
 
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setMyToys(data));
-  }, [url]);
+      .then((data) => {
+        // console.log(data);
+        setMyToys(data);
+
+        // console.log(sortingValue);
+      });
+  }, [url, sortingValue]);
 
   //   console.log(myToys);
 
@@ -47,15 +58,30 @@ const MyToys = () => {
     }
   };
 
+  const changeSortingValue = () => {
+    setSortingValue("asc");
+    // console.log(sortingValue);
+  };
+  const changeSortingValueDsc = () => {
+    setSortingValue("dsc");
+    // console.log(sortingValue);
+  };
+
   const handleModifiedCountChange = (count) => {
     setModifiedCount(count);
+    console.log(modifiedCount);
   };
 
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setMyToys(data));
-  }, [handleModifiedCountChange]);
+      .then((data) => {
+        setMyToys(data);
+        // console.log(data);
+      });
+  }, [url]);
+
+  // handleModifiedCountChange dependencies
 
   return (
     <div>
@@ -68,9 +94,20 @@ const MyToys = () => {
               <th>Name</th>
               <th className="text-center">subcategory</th>
               <th className="text-center">Seller Name</th>
-              <th className="text-center">price</th>
+              <th className="text-center flex justify-center items-center gap-2">
+                price
+                {(sortingValue === "asc" && (
+                  <button onClick={changeSortingValueDsc}>
+                    <BsFillArrowUpCircleFill />
+                  </button>
+                )) ||
+                  (sortingValue === "dsc" && (
+                    <button onClick={changeSortingValue}>
+                      <BsFillArrowDownCircleFill />
+                    </button>
+                  ))}
+              </th>
               <th className="text-center">quantity</th>
-              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -81,6 +118,8 @@ const MyToys = () => {
                 index={index}
                 toy={toy}
                 // handleUpdate={handleUpdate}
+                myToys={myToys}
+                setMyToys={setMyToys}
                 modifiedCount={modifiedCount}
                 handleModifiedCountChange={handleModifiedCountChange}
               ></TableData>
