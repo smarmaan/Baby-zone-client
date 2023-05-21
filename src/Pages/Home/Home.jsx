@@ -34,8 +34,6 @@ const Home = () => {
 
       <Gallery></Gallery>
 
-      <h2> marvel legends action figures</h2>
-
       <CustomTab></CustomTab>
 
       <div>

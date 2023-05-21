@@ -1,8 +1,15 @@
 import { useForm } from "react-hook-form";
 import useTitle from "../../Hooks/useTitle";
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const AddToy = () => {
   useTitle("BABY ZONE | ADD TOYS");
+
+  const { user } = useContext(AuthContext);
+
+  // console.log(user.displayName);
+  // console.log(user.email);
 
   const {
     register,
@@ -83,6 +90,7 @@ const AddToy = () => {
               <input
                 className="input input-bordered"
                 placeholder="Seller Name"
+                defaultValue={user.displayName}
                 {...register("seller_name", { required: true })}
                 aria-invalid={errors.seller_name ? "true" : "false"}
               />
@@ -100,6 +108,7 @@ const AddToy = () => {
               <input
                 className="input input-bordered"
                 placeholder="Seller Email Address"
+                defaultValue={user.email}
                 {...register("seller_email", {
                   required: true,
                 })}
