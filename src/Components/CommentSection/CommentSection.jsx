@@ -15,14 +15,14 @@ const CommentSection = () => {
   return (
     <div className="my-20">
       <div
-        data-aos="zoom-in"
-        data-aos-offset="00"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
+        // data-aos="zoom-in"
+        // data-aos-offset="00"
+        // data-aos-delay="50"
+        // data-aos-duration="1000"
+        // data-aos-easing="ease-in-out"
+        // data-aos-mirror="true"
+        // data-aos-once="false"
+        // data-aos-anchor-placement="top-center"
         className="card md:w-[50%] mx-auto bg-[#fbffdc] text-[#0a4d7b] font-Cambria my-16"
       >
         <div className="card-body items-center rounded-2xl text-justify md:text-center shadow-2xl">
