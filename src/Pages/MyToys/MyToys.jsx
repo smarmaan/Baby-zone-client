@@ -7,13 +7,8 @@ import {
 } from "react-icons/bs";
 import useTitle from "../../Hooks/useTitle";
 
-
 const MyToys = () => {
-
-
-  useTitle("BABY ZONE | MY TOYS")
-
-
+  useTitle("BABY ZONE | MY TOYS");
 
   const { user } = useContext(AuthContext);
 
@@ -22,7 +17,7 @@ const MyToys = () => {
   const [modifiedCount, setModifiedCount] = useState(0);
   const [sortingValue, setSortingValue] = useState("asc");
 
-  const url = `http://localhost:5000/my-toys?email=${user.email}&sort=${sortingValue}`;
+  const url = `https://baby-zone-server.vercel.app/my-toys?email=${user.email}&sort=${sortingValue}`;
 
   useEffect(() => {
     fetch(url)
@@ -41,7 +36,7 @@ const MyToys = () => {
     const proceed = confirm(`Are you sure you want to delete`);
 
     if (proceed) {
-      fetch(`http://localhost:5000/my-toys/${id}`, {
+      fetch(`https://baby-zone-server.vercel.app/my-toys/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

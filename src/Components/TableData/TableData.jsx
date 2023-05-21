@@ -33,7 +33,7 @@ const TableData = ({ toy, index, handleDelete, setMyToys, myToys }) => {
   const onSubmit = (data) => {
     console.log(data);
 
-    fetch(`http://localhost:5000/my-toys/${_id}`, {
+    fetch(`https://baby-zone-server.vercel.app/my-toys/${_id}`, {
       method: "PATCH",
 
       headers: {

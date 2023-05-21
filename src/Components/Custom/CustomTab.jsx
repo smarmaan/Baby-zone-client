@@ -6,7 +6,7 @@ import { useState } from "react";
 const CustomTab = () => {
   const [cardData, setCardData] = useState([]);
 
-  fetch("http://localhost:5000/all-toys").then((res) =>
+  fetch("https://baby-zone-server.vercel.app/all-toys").then((res) =>
     res.json().then((data) => setCardData(data))
   );
 

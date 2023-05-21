@@ -14,7 +14,7 @@ const AllToys = () => {
   console.log(allToys);
 
   const handleSearchText = () => {
-    fetch(`http://localhost:5000/search-by/${searchText}`)
+    fetch(`https://baby-zone-server.vercel.app/search-by/${searchText}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
