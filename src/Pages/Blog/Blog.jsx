@@ -303,8 +303,43 @@ const Blog = () => {
 
  */}
 
-        {/* What is express js? What is Nest JS ? */}
+        <section className="mt-5 w-[100%] bg-orange-100 gap-9 p-8 mx-auto rounded-2xl drop-shadow-2xl mb-10">
+          <h1 className="font-bold text-3xl text-center mb-5 p-5 pt-5 mt-4">
+            What is &#34;express js&#34; & &#34;NestJS&#34; ?{" "}
+          </h1>
 
+          <p className="text-justify  md:text-center text-cyan-800 font-medium mb-7 pb-10 p-5">
+            <h1 className="font-bold text-xl text-center text-red-800">
+              Express JS{" "}
+            </h1>
+            Express.js is a minimalist and flexible web application framework
+            for Node.js. It provides a straightforward and unopinionated
+            approach to building web applications and APIs. Express.js allows
+            developers to handle HTTP requests, define routes, and implement
+            middleware to process and respond to incoming requests. It is widely
+            used for developing small to medium-sized applications and RESTful
+            APIs.
+            <br />
+            <br />
+            <h1 className="font-bold text-xl text-center text-red-800">
+              Nest JS{" "}
+            </h1>
+            Nest.js, on the other hand, is a progressive and opinionated
+            framework for building scalable server-side applications with
+            Node.js. It is built with TypeScript and draws inspiration from
+            Angulars concepts. Nest.js promotes a modular architecture and
+            dependency injection, providing a structured and maintainable
+            approach to application development. It offers features like
+            decorators-based routing, middleware support, dependency injection,
+            and easy integration with various libraries. Nest.js is commonly
+            used for developing large-scale applications, microservices, and
+            server-side APIs.
+            <br />
+            <br />
+            --------------------
+            <strong className="font-bold text-lg text-red-800"></strong>
+          </p>
+        </section>
         {/* 
 
 
